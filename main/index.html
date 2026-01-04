@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenith | Auge em Desenvolvimento</title>
+    <link rel="shortcut icon" href="/img/favicon.jpeg" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Academia Zenith - Múltiplas modalidades de fitness para todas as idades. Musculação, Yoga, Crossfit, Pilates e muito mais!"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <div class="logo-icon">Z</div>
+          Zenith
+        </div>
+        <ul class="nav-links">
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#preços">Preços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <button class="btn-login">
+            <a href="#inscricao">Inscreva-se</a>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Alcance seu Zenith</h1>
+      <p>
+        Academia completa com múltiplas modalidades para todas as idades.
+        Transforme seu corpo e mente conosco!
+      </p>
+      <div class="hero-button">
+        <button class="btn-primary" id="animatedButton">
+          Agende um treino conosco
+        </button>
+      </div>
+    </section>
+
+    <div class="fade-in card">
+      <section id="modalidades" class="modalidades">
+        <h2>Nossas Modalidades</h2>
+        <div class="modalidades-grid">
+          <div class="modalidade-card">
+            <div class="modalidade-icon">💪</div>
+            <h3>Musculação</h3>
+            <p>
+              Equipamentos modernos e profissionais especializados para todos os
+              níveis. Totalmente direcionado ao ganho de massa muscular.
+            </p>
+          </div>
+          <div class="modalidade-card">
+            <div class="modalidade-icon">🧘‍♀️</div>
+            <h3>Yoga</h3>
+            <p>
+              Práticas de yoga para relaxamento e flexibilidade. Ideal para
+              reduzir estresse e melhorar a saúde mental.
+            </p>
+          </div>
+          <div class="modalidade-card">
+            <div class="modalidade-icon">⚡</div>
+            <h3>CrossFit</h3>
+            <p>
+              Exercicios funcionais direcionados ao ganho de elevação e
+              mobilidade. Aprimoramento de habilidades cognitivas.
+            </p>
+          </div>
+          <div class="modalidade-card">
+            <div class="modalidade-icon">🏃</div>
+            <h3>Cardio</h3>
+            <p>
+              Esteiras, bicicletas e elípticos de última geração para melhorar a
+              resistência cardiovascular.
+            </p>
+          </div>
+          <div class="modalidade-card">
+            <div class="modalidade-icon">🤸</div>
+            <h3>Pilates</h3>
+            <p>
+              Fortalecimento da parte central do corpo com foco em postura,
+              equilíbrio e controle.
+            </p>
+          </div>
+          <div class="modalidade-card">
+            <div class="modalidade-icon">🥊</div>
+            <h3>Boxe</h3>
+            <p>
+              Desenvolva força, velocidade e técnica com treinos de boxe
+              supervisionados por profissionais qualificados.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="preços">
+        <h2>Planos e Preços</h2>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Plano Comum</h3>
+            <div class="price">
+              R$99,90 <span class="price-period">/mês</span>
+            </div>
+            <ul class="features-list">
+              <li>Equipamentos básicos</li>
+              <li>Esteira</li>
+              <li>Elíptico</li>
+              <li>Direito a 2 acompanhantes</li>
+            </ul>
+            <button class="btn-primary">Escolher Plano</button>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Plano Premium</h3>
+            <div class="price">
+              R$199,90 <span class="price-period">/mês</span>
+            </div>
+            <ul class="features-list">
+              <li>Equipamentos avançados</li>
+              <li>Acesso a todas as modalidades</li>
+              <li>Personal Trainer incluso</li>
+              <li>Direito a 5 acompanhantes</li>
+            </ul>
+            <button class="btn-primary">Escolher Plano</button>
+          </div>
+
+          <div class="pricing-card">
+            <h3>Plano VIP</h3>
+            <div class="price">
+              R$299,90 <span class="price-period">/mês</span>
+            </div>
+            <ul class="features-list">
+              <li>Acesso 24 horas</li>
+              <li>Treinos Funcionais</li>
+              <li>Massagens semanais</li>
+              <li>Direito a 8 acompanhantes</li>
+            </ul>
+            <button class="btn-primary">Escolher Plano</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="inscricao">
+        <h2>Inscreva-se Já!!</h2>
+        <div class="form-section">
+          <form onsubmit="handinscricao(event)">
+            <div class="form-group">
+              <label for="name">Nome Completo</label>
+              <input type="text" name="nome" id="nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" name="telefone" id="telefone" required />
+            </div>
+            <div class="form-group">
+              <label for="plano">Plano Desejado</label>
+              <select name="plano" id="plano" required>
+                <option value="">Selecione um plano</option>
+                <option value="comum">Plano Comum - R$99,90</option>
+                <option value="premium">Plano Premium - R$199,90</option>
+                <option value="vip">Plano VIP - R$299,90</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem(opcional)</label>
+              <textarea name="mensagem" id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="form-submit">
+              Confirmar Inscrição
+            </button>
+          </form>
+        </div>
+      </section>
+      <section id="contato">
+        <h2>Entre em Contato</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <h4>localização</h4>
+            <p>Rua Gonçalinho, 909 <br />Cajueiro, CE<br />CEP:0123</p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <h4>Telefone</h4>
+            <p>(85)0002-8922</p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <h4>Email</h4>
+            <p>
+              contatoZenith@gmail.com.br <br />suporte@zenithacademia.com.br
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer id="sobre">
+        <div class="footer-content">
+          <div clsss="footer-section">
+            <h4 class="text-yellow">Zenith Academia</h4>
+            <p>
+              O Desenvolvimento do seu auge começa aqui conosco. Trilhando sua
+              jornada de bem-estar.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>links Rápidos</h4>
+            <ul>
+              <li><a href="#modalidades">Modalidades</a></li>
+              <li><a href="#preço">Preço</a></li>
+              <li><a href="#inscricao">Inscrição</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Informações</h4>
+            <ul>
+              <li><a href="#">Termos de Serviço</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="yellow-text">
+            &copy; 2025 Zenith Academia. Todos os direitos reservados.
+          </p>
+          <p class="copyright">
+            Desenvolvido por
+            <a
+              href="https://github.com/calebsv"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Caleb Lira</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
